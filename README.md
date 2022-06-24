@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://frontendmentor.io)
-- Live Site URL: [Add live site URL here](https://ElpidaHope.github.io/expenses-chart-component)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/expenseschartcomponent-using-vanilla-javascript-bHjGFUMwtz)
+- Live Site URL: [live site URL](https://ElpidaHope.github.io/expenses-chart-component)
 
 ## My process
 
