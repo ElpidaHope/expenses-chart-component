@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Cream);
+  padding: 0 20px;
+  font-family: 'DM Sans';
+}
+
+.container {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  background-color: var(--Soft-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.balance {
+  color: var(--Very-pale-orange);
+}
+
+.balance h1 {
+  font-size: 28px;
+}
+
+.chart {
+  background-color: var(--Very-pale-orange);
+  padding: 20px;
+  border-radius: 15px;
+}
+.chart > h1 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--Medium-brown);
+  margin-bottom: 20px;
+}
+
+.bars > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.bars > div > p {
+  color: var(--Medium-brown);
+  font-size: 15px;
+  text-align: center;
+}
+
+.bar-price {
+  position: absolute;
+  top: -30px;
+  left: -4px;
+  background-color: var(--Dark-brown);
+  padding: 5px 6px;
+  border-radius: 5px;
+  font-size: 12px !important;
+  font-weight: 700;
+  color: #fff !important;
+  display: none;
+}
+
+.bar-price.show {
+  display: block;
+}
+@media (max-width: 400px) {
+  .bar-price {
+    font-size: 8px !important;
+  }
+}
+
+
+.bars > div > div {
+  width: auto;
+  background-color: var(--Soft-red);
+  border-radius: 5px;
+}
+
+.bars > div > div.fade {
+  opacity: 0.5;
+}
+
+.bars > div > div.active {
+  background-color: var(--Cyan);
+}
+
+
+.total p{
+  color: var(--Medium-brown);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.percent {
+  font-weight: 700;
+  color: black !important;
+  text-align: right;
+}
